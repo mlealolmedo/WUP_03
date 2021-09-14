@@ -45,6 +45,11 @@ favstats(alcohol~Seat,data=ucdavis1)
 According to the chart the back row drinks 8 in a half drinks per week, the front row drinks 1 in a half drinks per week, and the middle row drinks 3 thirds of a drink per week, so overall the back row drinks more drinks per week compared to the front and middle rows, due to this it's reasonable to assume they aren't drinking the same amount.
 
 ## Inferential Tests
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+The P value represents the chances of getting a result that we just obtained, if the null hypothesis is actually true. Since the result is small I am going to reject the hypothesis.
 
 ## Conclusions
 
