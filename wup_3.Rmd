@@ -35,6 +35,8 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+The plot shows a huge difference between the back row and the front row, it also shows a big difference in the back row and the middle row.
+
 ## Numerical Summarys 
 ```{r}
 favstats(alcohol~Seat,data=ucdavis1)
